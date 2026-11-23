@@ -1,0 +1,5 @@
+node_modules/
+dist/
+# 로컬 스크린샷·참고 이미지는 올리지 않음
+*.png
+*.jpg

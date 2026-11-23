@@ -1,0 +1,33 @@
+{
+  "name": "fakechat",
+  "productName": "FakeChat",
+  "version": "1.0.0",
+  "description": "게임 옆에 띄워두는 가짜 방송 채팅창",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable"
+  },
+  "build": {
+    "appId": "com.fakechat.app",
+    "productName": "FakeChat",
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html"
+    ],
+    "win": {
+      "target": "portable"
+    },
+    "portable": {
+      "artifactName": "FakeChat.exe"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "devDependencies": {
+    "electron": "^45.1.0",
+    "electron-builder": "^26.18.0"
+  }
+}
